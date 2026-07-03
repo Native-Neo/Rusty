@@ -34,9 +34,14 @@ fn div() {
     let mut res = num1 / num2;
     println!("Result: {}", res);
 }
+fn remain() {
+    let (num1, num2) = input();
+    let mut res = num1 % num2;
+    println!("Result: {}", res);
+}
 fn main() {
     let mut operator = String::new();
-    println!("My new calc thing :D");
+    println!("Rusty :D");
     loop {
         print!("Enter an operator: ");
         io::stdout().flush().unwrap();
