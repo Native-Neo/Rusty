@@ -1,10 +1,10 @@
 [package]
-name = "somthing"
+name = "Rusty"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 
 [[bin]]
-name = "somthing"
-path = "src/somthing.rs"
+name = "Rusty"
+path = "src/Rusty.rs"
