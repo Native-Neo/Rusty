@@ -15,33 +15,33 @@ fn input() -> (i32, i32) {
 }
 fn add() {
     let (num1, num2) = input();
-    let mut res = num1 + num2;
+    let res = num1 + num2;
     println!("Result: {}", res);
 }
 fn sub() {
     let (num1, num2) = input();
-    let mut res = num1 - num2;
+    let res = num1 - num2;
     println!("Result: {}", res);
 
 }
 fn multi() {
     let (num1, num2) = input();
-    let mut res = num1 * num2;
+    let res = num1 * num2;
     println!("Result: {}", res);
 }
 fn div() {
     let (num1, num2) = input();
-    let mut res = num1 / num2;
+    let res = num1 / num2;
     println!("Result: {}", res);
 }
 fn remain() {
     let (num1, num2) = input();
-    let mut res = num1 % num2;
+    let res = num1 % num2;
     println!("Result: {}", res);
 }
 fn prcnt() {
     let (num1, num2) = input();
-    let mut res = (num1 / num2) * 100 ;
+    let res = (num1 as f32 / num2 as f32 ) * 100.0 ;
     println!("{num1} Is {res}% of {num2}");
 }
 fn main() {
