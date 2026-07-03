@@ -39,6 +39,11 @@ fn remain() {
     let mut res = num1 % num2;
     println!("Result: {}", res);
 }
+fn prcnt() {
+    let (num1, num2) = input();
+    let mut res = (num1 / num2) * 100 ;
+    println!("{num1} Is {res}% of {num2}");
+}
 fn main() {
     let mut operator = String::new();
     println!("Rusty :D");
@@ -53,6 +58,22 @@ fn main() {
         else if operator.trim() == "-" {
             operator.clear();
             sub();
+        }
+        else if operator.trim() == "*" {
+            operator.clear();
+            multi();
+        }
+        else if operator.trim() == "/" {
+            operator.clear();
+            div();
+        }
+        else if operator.trim() == "//" {
+            operator.clear();
+            remain();
+        }
+        else if operator.trim() == "%" {
+            operator.clear();
+            prcnt();
         }
         else {break;}
     }
