@@ -8,3 +8,13 @@ edition = "2024"
 [[bin]]
 name = "Rusty"
 path = "src/Rusty.rs"
+
+[package.metadata.generate-rpm]
+name = "Rusty"
+version = "0.1.0"
+license = "MIT"
+summary = "A Rust Calculator"
+assets = [
+    { source = "target/release/Rusty", dest = "/usr/bin/Rusty", mode = "755" },
+    { source = "README.md", dest = "/usr/share/doc/Rusty/README.md", mode = "644" }
+]

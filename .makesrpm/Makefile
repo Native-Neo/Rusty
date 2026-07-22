@@ -1,0 +1,2 @@
+srpm:
+    # Install tools
